@@ -10,6 +10,9 @@ import casa7 from './imagenes/casa7.jpg';
 import instagram from './imagenes/instagram.svg';
 import facebook from './imagenes/facebook.svg';
 import whatsapp from './imagenes/whatsapp.svg';
+import location from './imagenes/location.png';
+import email from './imagenes/mail.png';
+import phone from './imagenes/phone.png';
 import ReactWhatsapp from 'react-whatsapp';
 
 const App = () => {
@@ -57,16 +60,18 @@ const App = () => {
         <div id="contenedor-redes">
           <h1 id='footer-title'>G2P Construcciones</h1>
           <ul id='lista-redes'>
-            <li><a className='redes' href='#'>
+            <li><a className='redes' href='https://www.instagram.com/g2pconstrucciones/?hl=es-la' target="_blank">
               <img className='imagen-red' src={instagram} width="30px"/>
             </a>
             </li>
-            <li><a className='redes' href="#">
+            <li><a className='redes' href="https://www.facebook.com/PlanosMunicipalesProyectoDireccion/?locale=es_LA" target="_blank">
               <img className='imagen-red' src={facebook} width="30px"/>
             </a>
             </li>
             <li><a className='redes' href='#'>
+            <ReactWhatsapp id="boton-whatsapp" number="+5491128523013" message="Probando integracion con whatsapp">
               <img className='imagen-red' src={whatsapp} width="30px"/>
+            </ReactWhatsapp>
             </a>
             </li>
           </ul>
@@ -74,14 +79,14 @@ const App = () => {
         <div id='contenedor-contactos'>
           <h2 id="contactos-footer">Contacto</h2>
           <ul id='lista-footer'>
-            <li className='menu-footer'>
-            📞 +54123456789
+            <li className = 'menu-footer'>
+              <img className = "logos" src={phone}/> +54123456789
             </li>
             <li className='menu-footer'>
-            ✉️ ejemplo-de-correo@mail.com
+              <img className = "logos" src={email}/> ejemplo-de-correo@mail.com
             </li>
-            <li className='menu-footer'>
-            📍 O'Connor 1284 - Pilar - Buenos Aires - Argentina
+            <li className = 'menu-footer'>
+              <img className = "logos" src={location}/> O'Connor 1284 - Pilar - Buenos Aires - Argentina
             </li>
           </ul>
         </div>

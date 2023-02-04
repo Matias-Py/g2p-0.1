@@ -686,7 +686,8 @@
   .menu-footer{
     display: block;
     margin: 0;
-    font-family: 0.4em;
+    font-size: 0.9em;
+
   }
   #telefono{
     color: #ffffff;
@@ -710,6 +711,14 @@
     margin: 0 auto;
   }
   .imagen-red{
-    width: 30px;
+    width: 35px;
   }
+  .logos{
+    width: 20px;
+  }
+}
+
+#boton-whatsapp{
+  background-color: black;
+  border: none;
 }
