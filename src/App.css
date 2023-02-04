@@ -1,38 +1,715 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1300px) {
+  *{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+  }
+  /*menu y encabezado***********/
+  h1{
+    font-size: 1.7em;
+    padding: 1px 2px;
+    color: #ffffff;
+    background-color: black;
+  }
+  #about-us{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+  #header{
+    margin: 0 auto;
+    width: 100%;
+    height: 5em;
+    background-color: black;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  #container-logo{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+  }
+  #menu{
+    background-color: black;
+    display: flex;
+    margin-right: 1em;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  ul{
+    margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: black;
+  }
+  li{
+    background-color: black;
+    color: #ffffff;
+    margin-left: 1em;
+    list-style: none;
+    cursor: pointer;
+    padding: 0.5em;
+    cursor: pointer;
+  } 
+  #contact{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  #contact:hover{
+    color: black;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  #contact:hover a{
+    color: black;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  /*Presentacion de la empresa***********/
+  #presentation{
+    margin: 0 auto;
+    padding-top: 3em;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 50% 50%;
+  }
+  #our-presentation{
+    margin: 0 auto;
+    width: 90%;
+  }
+  #image-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #button{
+    background-color: black;
+    color: #ffffff;
+    margin: 1.8em 0;
+    border: none;
+    padding: 0.6em;
+    cursor: pointer;
+  }
+  #button:hover{
+    background-color: black;
+    color: #ffffff;
+    margin: 1.8em 0;
+    padding: 0.6em;
+    font-weight:700;
+    cursor: pointer;
+  }
+  a{
+    color:#ffffff;
+    text-decoration: none;
+    background-color: black;
+  }
+  li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  /*Listado de proyectos***********/
+  #list-projects{
+    padding-top: 2em;
+    display: grid;
+    width: 100%;
+    margin: 1em auto 2em auto;
+    justify-content: center;
+    background-color: #f5f6fa;
+    text-align: center;
+    padding-bottom: 2em;
+  
+  }
+  #photos-projects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 0.8em;
+    background-color: #f5f6fa; 
+  }
+  img{
+    background-color: #f5f6fa;
+    cursor: pointer;
+  }
+  #project-title{
+    padding-bottom: 0.5em;
+    color: black;
+    background-color: #f5f6fa;
+  }
+  /*Personas***********/
+  #nosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #titulo-nosotros{
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+  h5{
+    font-size: 1em;
+  }
+  #foto-perfil{
+    margin-right: 1em;
+  }
+  #personas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  /*Footer*/
+  #footer{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 6em;
+    background-color: black;
+  }
+  #boton-whatsapp{
+    background-color: black;
+    border: none;
+  }
+  #logo-wts{
+    background-color: black;
+  }
+  #footer{
+    margin-top: 2em;
+    padding-top: 1em;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1em;
+  }
+  #footer-title{
+    background-color: black;
+    height: max-content;
+    padding: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  #lista-footer{
+    background-color: black;
+  }
+  #contactos-footer{
+    color: #ffffff;
+    background-color: black;
+  }
+  #contenedor-contactos{
+    background-color: black;
+  }
+  #lista-footer{
+    display: block;
+    list-style: none;
+  }
+  .menu-footer{
+    display: block;
+    margin: 0;
+  }
+  #telefono{
+    color: #ffffff;
+  }
+  .imagen-contacto{
+    color: black;
+  }
+  #contactos-footer{
+    margin-bottom: 0.2em;
+  }
+  #contenedor-redes{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  #lista-redes{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-red{
+    color: #ffffff;
+    background-color: black;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 900px) and (max-width: 1299px) {
+  *{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
   }
-  to {
-    transform: rotate(360deg);
+  /*menu y encabezado***********/
+  h1{
+    font-size: 1.7em;
+    padding: 1px 2px;
+    color: #ffffff;
+    background-color: black;
+  }
+  #about-us{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+  #header{
+    margin: 0 auto;
+    width: 100%;
+    height: 5em;
+    background-color: black;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  #container-logo{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+  }
+  #menu{
+    background-color: black;
+    display: flex;
+    margin-right: 1em;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  ul{
+    margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: black;
+  }
+  li{
+    background-color: black;
+    color: #ffffff;
+    margin-left: 1em;
+    list-style: none;
+    cursor: pointer;
+    padding: 0.5em;
+    cursor: pointer;
+  } 
+  #contact{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  #contact:hover{
+    color: black;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  #contact:hover a{
+    color: black;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  /*Presentacion de la empresa***********/
+  #presentation{
+    margin: 0 auto;
+    padding-top: 3em;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 50% 50%;
+  }
+  #our-presentation{
+    margin: 0 auto;
+    width: 90%;
+  }
+  #image-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #button{
+    background-color: black;
+    color: #ffffff;
+    margin: 1.8em 0;
+    border: none;
+    padding: 0.6em;
+    cursor: pointer;
+  }
+  #button:hover{
+    background-color: black;
+    color: #ffffff;
+    margin: 1.8em 0;
+    padding: 0.6em;
+    font-weight:700;
+    cursor: pointer;
+  }
+  a{
+    color:#ffffff;
+    text-decoration: none;
+    background-color: black;
+  }
+  li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  /*Listado de proyectos***********/
+  #list-projects{
+    padding-top: 2em;
+    display: grid;
+    width: 100%;
+    margin: 1em auto 2em auto;
+    justify-content: center;
+    background-color: #f5f6fa;
+    text-align: center;
+    padding-bottom: 2em;
+  
+  }
+  #photos-projects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 0.8em;
+    background-color: #f5f6fa; 
+  }
+  img{
+    background-color: #f5f6fa;
+    cursor: pointer;
+  }
+  #project-title{
+    padding-bottom: 0.5em;
+    color: black;
+    background-color: #f5f6fa;
+  }
+  /*Personas***********/
+  #nosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #titulo-nosotros{
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+  h5{
+    font-size: 1em;
+  }
+  #foto-perfil{
+    margin-right: 1em;
+  }
+  #personas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  /*Footer*/
+  #footer{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 6em;
+    background-color: black;
+  }
+  #boton-whatsapp{
+    background-color: black;
+    border: none;
+  }
+  #logo-wts{
+    background-color: black;
+  }
+  #footer{
+    margin-top: 2em;
+    padding-top: 1em;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1em;
+  }
+  #footer-title{
+    background-color: black;
+    height: max-content;
+    padding: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  #lista-footer{
+    background-color: black;
+  }
+  #contactos-footer{
+    color: #ffffff;
+    background-color: black;
+  }
+  #contenedor-contactos{
+    background-color: black;
+  }
+  #lista-footer{
+    display: block;
+    list-style: none;
+  }
+  .menu-footer{
+    display: block;
+    margin: 0;
+  }
+  #telefono{
+    color: #ffffff;
+  }
+  .imagen-contacto{
+    color: black;
+  }
+  #contactos-footer{
+    margin-bottom: 0.2em;
+  }
+  #contenedor-redes{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  #lista-redes{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-red{
+    color: #ffffff;
+    background-color: black;
+  }
+}
+
+@media (max-width: 899px) {
+  *{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+  }
+  /*menu y encabezado***********/
+  h1{
+    font-size: 1.7em;
+    padding: 1px 2px;
+    color: #ffffff;
+    background-color: black;
+  }
+  #about-us{
+    margin-top: 0;
+    font-size: 1.5em;
+    padding-top: 1em;
+  }
+  #header{
+    margin: 0 auto;
+    width: 100%;
+    height: 5em;
+    background-color: black;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  #container-logo{
+    background-color: black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+  #menu{
+    background-color: black;
+    display: block;
+    margin-right: 1em;
+    width: 100%;
+    margin-bottom: 0.2em;
+  }
+  ul{
+    margin-right: 2em;
+    display: block;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: black;
+  }
+  li{
+    background-color: black;
+    color: #ffffff;
+    margin-left: 1em;
+    list-style: none;
+    cursor: pointer;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
+  /*Presentacion de la empresa***********/
+  #presentation{
+    margin: 0 auto;
+    padding-top: 3.2em;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100%;
+  }
+  #our-presentation{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  #image-presentation{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+  #about-us{
+    padding-bottom: 0.2em;
+  }
+  #button{
+    font-weight: bold;
+    background-color: black;
+    color: #ffffff;
+    margin: 1.8em 0;
+    border: none;
+    padding: 0.8em;
+    cursor: pointer;
+  }
+  a{
+    color:#ffffff;
+    text-decoration: none;
+    background-color: black;
+  }
+  li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  /*Listado de proyectos***********/
+  #imagen-presentacion{
+    width: 260px;
+  }
+  .foto-casa{
+    width: 240px;
+  }
+  #list-projects{
+    padding-top: 2em;
+    display: grid;
+    width: 100%;
+    margin: 1em auto 2em auto;
+    justify-content: center;
+    background-color: #f5f6fa;
+    text-align: center;
+  
+  }
+  #photos-projects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 0.8em;
+    background-color: #f5f6fa; 
+  }
+  img{
+    background-color: #f5f6fa;
+    cursor: pointer;
+  }
+  #project-title{
+    padding-bottom: 0.5em;
+    color: black;
+    background-color: #f5f6fa;
+  }
+  /*Personas***********/
+  #nosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #titulo-nosotros{
+    margin-top: 2em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+  h5{
+    font-size: 1em;
+  }
+  #foto-perfil{
+    margin-right: 1em;
+  }
+  #personas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  /*Footer*/
+  #logo-wts{
+    background-color: black;
+  }
+  #footer{
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  #footer-title{
+    text-align: center;
+    background-color: black;
+    height: max-content;
+    padding: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  #lista-footer{
+    background-color: black;
+  }
+  #contactos-footer{
+    color: #ffffff;
+    background-color: black;
+  }
+  #contenedor-contactos{
+    background-color: black;
+    padding: 1em;
+  }
+  #lista-footer{
+    display: block;
+    list-style: none;
+  }
+  .menu-footer{
+    display: block;
+    margin: 0;
+    font-family: 0.4em;
+  }
+  #telefono{
+    color: #ffffff;
+  }
+  .imagen-contacto{
+    color: black;
+  }
+  #contactos-footer{
+    margin-bottom: 0.2em;
+    text-align: center;
+  }
+  #contenedor-redes{
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  #lista-redes{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .imagen-red{
+    width: 30px;
   }
 }
