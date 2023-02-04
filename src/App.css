@@ -684,7 +684,7 @@
     list-style: none;
   }
   .menu-footer{
-    display: block;
+    display: flex;
     margin: 0;
     font-size: 0.9em;
 
@@ -708,13 +708,13 @@
   #lista-redes{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    justify-content: center;
   }
   .imagen-red{
     width: 35px;
   }
   .logos{
-    width: 20px;
+    height: 20px;
   }
 }
 
