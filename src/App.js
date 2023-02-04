@@ -80,13 +80,13 @@ const App = () => {
           <h2 id="contactos-footer">Contacto</h2>
           <ul id='lista-footer'>
             <li className = 'menu-footer'>
-              <img className = "logos" src={phone}/> +54123456789
+              <img className = "logos" src={phone}/> <p className='texto-logo'>+54123456789</p>
             </li>
             <li className='menu-footer'>
-              <img className = "logos" src={email}/> ejemplo-de-correo@mail.com
+              <img className = "logos" src={email}/>  <p className='texto-logo'>ejemplo-de-correo@mail.com</p>
             </li>
             <li className = 'menu-footer'>
-              <img className = "logos" src={location}/> O'Connor 1284 - Pilar - Buenos Aires - Argentina
+              <img className = "logos" src={location}/> <p className='texto-logo'>O'Connor 1284 - Pilar - Buenos Aires - Argentina</p>
             </li>
           </ul>
         </div>

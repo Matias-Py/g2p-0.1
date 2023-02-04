@@ -215,7 +215,7 @@
     list-style: none;
   }
   .menu-footer{
-    display: block;
+    display: flex;
     margin: 0;
   }
   #telefono{
@@ -459,7 +459,7 @@
     list-style: none;
   }
   .menu-footer{
-    display: block;
+    display: flex;
     margin: 0;
   }
   #telefono{
@@ -721,4 +721,9 @@
 #boton-whatsapp{
   background-color: black;
   border: none;
+}
+.texto-logo{
+  color: #ffffff;
+  background-color: black;
+  padding-left: .4em;
 }
