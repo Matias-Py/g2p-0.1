@@ -199,6 +199,7 @@
     height: max-content;
     padding: 0.1em;
     margin-bottom: 0.1em;
+    border-bottom: 1px solid #ffffff;
   }
   #lista-footer{
     background-color: black;
@@ -226,6 +227,7 @@
   }
   #contactos-footer{
     margin-bottom: 0.2em;
+    border-bottom: 1px solid #ffffff;
   }
   #contenedor-redes{
     background-color: black;
@@ -443,11 +445,14 @@
     height: max-content;
     padding: 0.1em;
     margin-bottom: 0.1em;
+    border-bottom: 1px solid #ffffff;
   }
   #lista-footer{
     background-color: black;
+    
   }
   #contactos-footer{
+    border-bottom: 1px solid #ffffff;
     color: #ffffff;
     background-color: black;
   }
@@ -455,6 +460,7 @@
     background-color: black;
   }
   #lista-footer{
+    list-style: none;
     display: block;
     list-style: none;
   }

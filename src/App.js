@@ -60,16 +60,16 @@ const App = () => {
         <div id="contenedor-redes">
           <h1 id='footer-title'>G2P Construcciones</h1>
           <ul id='lista-redes'>
-            <li><a className='redes' href='https://www.instagram.com/g2pconstrucciones/?hl=es-la' target="_blank">
+            <li><a className='redes' href='https://www.instagram.com/g2pconstrucciones' target="_blank">
               <img className='imagen-red' src={instagram} width="30px"/>
             </a>
             </li>
-            <li><a className='redes' href="https://www.facebook.com/PlanosMunicipalesProyectoDireccion/?locale=es_LA" target="_blank">
+            <li><a className='redes' href="https://www.facebook.com/PlanosMunicipalesProyectoDireccion" target="_blank">
               <img className='imagen-red' src={facebook} width="30px"/>
             </a>
             </li>
             <li><a className='redes' href='#'>
-            <ReactWhatsapp id="boton-whatsapp" number="+5491128523013" message="Probando integracion con whatsapp">
+            <ReactWhatsapp id="boton-whatsapp" number="+5491161830483" message="Hola, visité su página y me gustaría hacerles una consulta.">
               <img className='imagen-red' src={whatsapp} width="30px"/>
             </ReactWhatsapp>
             </a>
@@ -80,13 +80,13 @@ const App = () => {
           <h2 id="contactos-footer">Contacto</h2>
           <ul id='lista-footer'>
             <li className = 'menu-footer'>
-              <img className = "logos" src={phone}/> <p className='texto-logo'>+54123456789</p>
+              <p className='texto-logo'>+5491161830483</p>
             </li>
             <li className='menu-footer'>
-              <img className = "logos" src={email}/>  <p className='texto-logo'>ejemplo-de-correo@mail.com</p>
+              <p className='texto-logo'>planosmunicipales@outlook.com</p>
             </li>
             <li className = 'menu-footer'>
-              <img className = "logos" src={location}/> <p className='texto-logo'>O'Connor 1284 - Pilar - Buenos Aires - Argentina</p>
+              <p className='texto-logo'>O'Connor 1284 - Pilar - Buenos Aires - Argentina</p>
             </li>
           </ul>
         </div>
