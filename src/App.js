@@ -33,11 +33,7 @@ const App = () => {
       <section id='presentation'>
         <div id='our-presentation'>
           <h3 id='about-us'>Sobre Nosotros</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis arcu neque.
-             In hac habitasse platea dictumst. In aliquam commodo tellus at pulvinar. Nulla a risus eget nisl viverra maximus. 
-             Praesent sed metus ligula Nunc at faucibus sem, eu convallis dui.
-             Nulla faucibus justo ornare elit semper aliquam eget quis tellus.
-             Maecenas dignissim lobortis elit, vel pulvinar libero maximus in.
+          <p>Somos una empresa constructora dedicada a brindar soluciones integrales y personalizadas en diseño y construcción de alta calidad. Nos enfocamos en ofrecer un servicio excepcional, garantizando la satisfacción de nuestros clientes a través de la realización eficiente y efectiva de proyectos de construcción.
           </p>
           <button id='button'><a href='#list-projects'>Ver proyectos</a></button>
         </div>
